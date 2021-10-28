@@ -21,7 +21,7 @@ To run this application, you will need to secure a Pexels API key and add the fo
 
 REACT_APP_API_KEY=YOUR_API_KEY
 
-To get a key;
+To get a key:
 
 <ul>
 <li>Create a free Pexels account at https://www.pexels.com/onboarding</li>

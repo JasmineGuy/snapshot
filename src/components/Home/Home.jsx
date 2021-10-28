@@ -10,6 +10,7 @@ const Home = () => {
   const [photos, setPhotos] = useState();
   const [userInput, setUserInput] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState();
   const [isSearch, setIsSearch] = useState(false);
   const [pending, setPending] = useState(false);
 
@@ -25,6 +26,7 @@ const Home = () => {
       })
       .then((res) => {
         setPhotos(res.data.photos);
+        setTotalPages(Math.ceil(res.data.total_results / 10));
         setPending(false);
       });
   }, []);
@@ -52,6 +54,7 @@ const Home = () => {
       )
       .then((res) => {
         setPhotos(res.data.photos);
+        setTotalPages(Math.ceil(res.data.total_results / 10));
         setPending(false);
       });
   };
@@ -75,6 +78,7 @@ const Home = () => {
       })
       .then((res) => {
         setPhotos(res.data.photos);
+        setTotalPages(Math.ceil(res.data.total_results / 10));
         setPending(false);
       });
 
@@ -110,16 +114,20 @@ const Home = () => {
           ))}
         </div>
       )}
-
       <div className="pagination-container">
         <Button
           text={"Prev"}
           isDisabled={currentPage === 1 || pending}
           handleClick={handlePagination}
         />
+        <div>
+          {currentPage && totalPages
+            ? `Page ${currentPage} of ${totalPages}`
+            : null}
+        </div>
         <Button
           text={"Next"}
-          isDisabled={pending}
+          isDisabled={pending || currentPage === totalPages}
           handleClick={handlePagination}
         />
       </div>

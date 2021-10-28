@@ -6,8 +6,15 @@
   width: 70px;
   border-radius: 5px;
   font-weight: 550;
+  cursor: pointer;
 }
-.btn:hover {
+.btn.disabled {
+  cursor: default;
+  background-color: #d0d0d0;
+  color: white;
+  border: none;
+}
+.btn.active:hover {
   background-color: #00b4d8;
   height: 50px;
   width: 70px;
@@ -15,5 +22,4 @@
   font-weight: 550;
   color: white;
   border: 1px solid transparent;
-  cursor: pointer;
 }
