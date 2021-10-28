@@ -8,12 +8,12 @@ Built in React using Pexels API
 
 <h1>Features</h1>
 <ul>
-<li>Users can see an initial set of curated photos on the home screen</li>
-<li>Users are able to access the the photographer’s name and url for every photo</li>
-<li>Users can paginate the list of curated photos</li>
-<li>Users can use a text input to search for photos that match their interests</li>
-<li>Users can see the results of a search in the photo viewing area</li>
-<li>Users can paginate search results if needed<li>
+    <li>Users can see an initial set of curated photos on the home screen</li>
+    <li>Users are able to access the the photographer’s name and url for every photo</li>
+    <li>Users can paginate the list of curated photos</li>
+    <li>Users can use a text input to search for photos that match their interests</li>
+    <li>Users can see the results of a search in the photo viewing area</li>
+    <li>Users can paginate search results if needed</li>
 </ul>
 
 <h1>Environment Variables</h1>
