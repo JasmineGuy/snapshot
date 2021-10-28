@@ -22,15 +22,18 @@ To run this application, you will need to secure a Pexels API key and add the fo
 REACT_APP_API_KEY=YOUR_API_KEY
 
 To get a key;
-● Create a free Pexels account at https://www.pexels.com/onboarding
-○ Click “I want to download”
-○ Complete the form. Make sure you use a valid email address
-● Confirm your email
-● Visit the Image & Video API section of your account
-● Provide a description and a URL. These can be fake, feel free to use the examples below or
-write your own
-○ Example description: “I’m using the API for programming practice projects”
-○ Example URL: https://example.com
+
+<ul>
+<li>Create a free Pexels account at https://www.pexels.com/onboarding</li>
+<li>Click “I want to download”</li>
+<li>Complete the form. Make sure you use a valid email address</li>
+<li>Confirm your email</li>
+<li>Visit the Image & Video API section of your account</li>
+<li>Provide a description and a URL. These can be fake, feel free to use the examples below or
+write your own</li>
+<li>Example description: “I’m using the API for programming practice projects”</li>
+<li>Example URL: https://example.com</li>
+</ul>
 
 <h1>Installation Steps</h1>
 <ol>
