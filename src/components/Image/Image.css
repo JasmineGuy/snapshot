@@ -1,0 +1,42 @@
+.image-block {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 1rem;
+  position: relative;
+  width: 80%;
+}
+
+.image {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.photo-info {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  z-index: 100px;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px) contrast(0.8);
+  display: none;
+}
+.image-block:hover .photo-info {
+  display: block;
+}
+.photo-info a {
+  color: white;
+  font-size: 24px;
+}
+.photo-inner {
+  padding: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .image-block {
+    width: 90%;
+  }
+}
