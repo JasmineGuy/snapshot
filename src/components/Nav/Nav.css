@@ -36,3 +36,13 @@
   align-items: center;
   color: #334043;
 }
+.nav {
+  color: #334043;
+  text-decoration: none;
+}
+.nav-active {
+  color: #00b4d8;
+}
+.nav:hover {
+  color: #00b4d8;
+}
