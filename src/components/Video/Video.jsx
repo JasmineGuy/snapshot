@@ -114,6 +114,7 @@ const Video = () => {
               url={video.user.url}
               photographer={video.user.name}
               link={video.user.url}
+              file={video.video_files.link}
             />
           ))}
         </div>
