@@ -53,7 +53,6 @@ const Video = () => {
         }
       )
       .then((res) => {
-        console.log("search res:", res.data);
         setVideos(res.data.videos);
         setTotalPages(Math.ceil(res.data.total_results / 10));
         setPending(false);
@@ -78,7 +77,6 @@ const Video = () => {
         },
       })
       .then((res) => {
-        console.log("res:", res.data);
         setVideos(res.data);
         setTotalPages(Math.ceil(res.data.total_results / 10));
         setPending(false);
