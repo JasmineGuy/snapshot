@@ -1,10 +1,12 @@
-**App Summary**
+# **App Summary**
+
 Snapshot is a website for browsing curated photos.
 
-#Technology
+# Technology
+
 Built in React using Pexels API
 
-#Features
+# Features
 
 - Users can see an initial set of curated photos on the home screen
 - Users are able to access the the photographer’s name and url for every photo
@@ -13,7 +15,8 @@ Built in React using Pexels API
 - Users can see the results of a search in the photo viewing area
 - Users can paginate search results if needed
 
-#Environment Variables
+# Environment Variables
+
 To run this application, you will need to secure a Pexels API key and add the following variable to your .env file
 
 REACT_APP_API_KEY=YOUR_API_KEY
@@ -30,7 +33,7 @@ To get a key:
 7. Example description: “I’m using the API for programming practice projects”
    Example URL: https://example.com
 
-#Installation Steps
+# Installation Steps
 
 1. Clone the project repository
 2. Install related dependencies with command 'npm install'
